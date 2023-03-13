@@ -141,7 +141,7 @@ dea.date = vac.date
 where dea.continent is not null
 -- order by 2,3
 
-Create view wholecontinet as
+Create view wholecontinent as
 select SUM(new_cases) as TotalCases, sum(cast(new_deaths as int)) as TotalDeaths, sum(cast(new_deaths as int))/SUM(new_cases)*100 as DeathPercentage
 from PortfolioProjects..CovidDeaths 
 -- where location like '%Afri%' and
